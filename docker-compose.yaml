@@ -2,7 +2,7 @@ services:
   app:
 #Uncomment the build context line when testing
 #    build: .
-    image: devops-test-image
+    image: devops-test-image1
     container_name: devops-test
     ports:
       - "3000:3000"
