@@ -12,23 +12,6 @@ This project is a minimal Node.js Express application that has been:
 
 ---
 
-## Project Structure
-
-```text
-.
-├── app.js
-├── server.js
-├── app.test.js
-├── Dockerfile
-├── docker-compose.yml
-├── package.json
-├── package-lock.json
-├── .github/
-│   └── workflows/
-│       └── ci.yml
-└── README.md
-```
-
 ---
 
 # Running Locally (Without Docker)
@@ -159,7 +142,7 @@ Additionally, assuming the completed application includes application-level logg
 
 # Assumptions and Trade-offs
 
-* The application is minimal, so a separate build phase is not required.
+* The application is minimal, so a separate build phase is not added.
 * The CI pipeline executes the test step before building the Docker image, preventing unnecessary image builds if the tests fail.
 * The Docker image is built to verify successful containerization but is not pushed to a container registry, since it was not mentioned.
 * Morgan was selected for request logging because it is lightweight, widely used, and integrates seamlessly as Express middleware.
