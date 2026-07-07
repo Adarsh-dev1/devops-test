@@ -1,6 +1,7 @@
 services:
   app:
-    build: .
+ #   build: .
+    image: devops-test-image
     container_name: devops-test
     ports:
       - "3000:3000"
