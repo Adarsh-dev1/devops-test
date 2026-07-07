@@ -1,6 +1,7 @@
 services:
   app:
- #   build: .
+#Uncomment the build context line when testing
+#    build: .
     image: devops-test-image
     container_name: devops-test
     ports:
